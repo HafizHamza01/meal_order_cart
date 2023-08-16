@@ -1,0 +1,26 @@
+.header_container {
+  background-color: rgb(154, 15, 15);
+}
+.header_sub_container {
+  min-height: 9vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.icon_component {
+  background-color: rgb(90, 35, 35);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+}
+.img_section {
+  overflow: hidden;
+}
+.img_section img {
+  object-fit: cover;
+  width: 108%;
+  height: 350px;
+  transform: rotateZ(-4deg) translateY(-4rem) translateX(-1rem);
+}

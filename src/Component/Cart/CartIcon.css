@@ -1,0 +1,12 @@
+svg{
+    width: 25px;
+}
+.icon_container{
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.icon_container h5{
+    margin: 0 0.2rem;
+}

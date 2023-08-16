@@ -1,0 +1,10 @@
+.about_meal_section{
+    width: 60%;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    bottom: 120px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    line-height: 1.5;
+}

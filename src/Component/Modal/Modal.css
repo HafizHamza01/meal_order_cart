@@ -1,0 +1,19 @@
+.modal_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #6763638a;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  width: 60%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  height: 80%;
+}
