@@ -2,12 +2,12 @@ import React from 'react'
 import "./SingleMeal.css";
 import Modal from '../Modal/Modal';
 import { useState } from 'react';
-const SingleMeal = ({ meal, onAdd , fullArray }) => {
+const SingleMeal = ({ meal, onAdd, fullArray }) => {
     const [show, setShow] = useState(false);
     const handleAddClick = (item) => {
         setShow(true);
         onAdd(item)
-        console.log(item);
+        // console.log(item);
     }
     const handleCloseClick = () => {
         setShow(false);
@@ -34,7 +34,7 @@ const SingleMeal = ({ meal, onAdd , fullArray }) => {
                     <button onClick={(event)=>{handleAddClick(meal)}}>+Add</button>
                 </div>
             </div>
-            <Modal showProp={show} fullArray={fullArray} meal={meal} onClose={handleCloseClick} />
+            <Modal showProp={show} fullArray={fullArray} onClose={handleCloseClick} />
         </>
     )
 }

@@ -28,29 +28,29 @@ const DUMMY_MEALS = [
         price: 18.99,
     },
 ];
-const AboutMeal = () => {
-    const [modalCart, setModalCart] = useState([]);
-    console.log(modalCart);
-    const onAdd = (item) => {
-        const exist = modalCart.find((x) => {
-            return x.id === item.id
-        })
-        if (exist) {
-            setModalCart(modalCart.map((x) => x.id === item.id ? { ...x, quantity: x.quantity + 1 } : x)
-            )
-        }
-        else {
-            // setModalCart(prev => [...prev, { ...item, quantity: 1 }])
-            setModalCart([...modalCart , item]);
+const AboutMeal = ({onAdd, fullArray}) => {
+    // const [modalCart, setModalCart] = useState([]);
+    // console.log(modalCart);
+    // const onAdd = (item) => {
+    //     const exist = modalCart.find((x) => {
+    //         return x.id === item.id
+    //     })
+    //     if (exist) {
+    //         setModalCart(modalCart.map((x) => x.id === item.id ? { ...x, quantity: x.quantity + 1 } : x)
+    //         )
+    //     }
+    //     else {
+    //         // setModalCart(prev => [...prev, { ...item, quantity: 1 }])
+    //         setModalCart([...modalCart , item]);
         
-        }
+    //     }
 
-    }
+    // }
     return (
         <>
             <section className='about_meal_section'>
                 {DUMMY_MEALS.map((meal) => (
-                    <SingleMeal fullArray={modalCart} onAdd={onAdd} meal={meal} />
+                    <SingleMeal fullArray={fullArray} onAdd={onAdd} meal={meal} />
                 ))}
             </section>
         </>

@@ -1,13 +1,13 @@
 import React from 'react'
 import "./Modal.css";
-const Modal = ({ showProp, onClose, meal, fullArray }) => {
+const Modal = ({ showProp, onClose, fullArray }) => {
     if (!showProp) {
         return null;
     }
-    console.log("fullArray",fullArray);
+    // console.log("fullArray",fullArray);
     return (
         <>
-            <div style={{ display: "flex", flexDirection: "column"}}>
+            <div style={{ display: "flex", flexDirection: "column" }}>
                 {fullArray.map((data) => (
                     <div className='modal_wrapper'>
                         <div className='modal'>

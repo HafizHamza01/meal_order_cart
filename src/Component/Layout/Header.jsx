@@ -2,14 +2,16 @@ import React from 'react'
 import CartIcon from '../Cart/CartIcon'
 import "./Header.css"
 import image from "../images/meals.jpg"
-const Header = () => {
+const Header = ({ fullArray }) => {
+  // console.log("Array", fullArray);
+
   return (
     <>
       <header className='header_container'>
         <div className='header_sub_container'>
           <h2>ReactMeals</h2>
           <div className='icon_component'>
-            <CartIcon />
+            <CartIcon fullArray={fullArray} />
           </div>
         </div>
       </header>

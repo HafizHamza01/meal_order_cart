@@ -2,11 +2,11 @@ import React from 'react'
 import MealSummary from './MealSummary'
 import AboutMeal from './AboutMeal'
 
-const Meal = () => {
+const Meal = ({onAdd,fullArray}) => {
     return (
         <div>
             <MealSummary />
-            <AboutMeal />
+            <AboutMeal fullArray={fullArray} onAdd={onAdd} />
         </div>
     )
 }
