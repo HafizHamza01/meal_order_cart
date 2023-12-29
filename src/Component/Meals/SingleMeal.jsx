@@ -7,10 +7,16 @@ const SingleMeal = ({ meal, onAdd, fullArray }) => {
     const handleAddClick = (item) => {
         setShow(true);
         onAdd(item)
-        // console.log(item);
     }
     const handleCloseClick = () => {
         setShow(false);
+    }
+    const filteredQuantity = fullArray.find((data) => {
+        return data.id === meal.id
+    });
+    let itemquantity;
+    if (filteredQuantity) {
+         itemquantity = filteredQuantity.quantity;
     }
     return (
         <>
@@ -26,15 +32,15 @@ const SingleMeal = ({ meal, onAdd, fullArray }) => {
                 </div>
                 <div className='right_div'>
                     <div className='meal_set_amount'>
-                        <h3>Amount</h3>
+                        <h3>Total Quantity</h3>
                         <div>
-                            <input type="number" />
+                            <input type="number" value={itemquantity} />
                         </div>
                     </div>
-                    <button onClick={(event)=>{handleAddClick(meal)}}>+Add</button>
+                    <button onClick={(event) => { handleAddClick(meal) }}>+Add</button>
                 </div>
             </div>
-            <Modal showProp={show} fullArray={fullArray} onClose={handleCloseClick} />
+            {show && <Modal showProp={show} fullArray={fullArray} onClose={handleCloseClick} />}
         </>
     )
 }

@@ -3,8 +3,6 @@ import CartIcon from '../Cart/CartIcon'
 import "./Header.css"
 import image from "../images/meals.jpg"
 const Header = ({ fullArray }) => {
-  // console.log("Array", fullArray);
-
   return (
     <>
       <header className='header_container'>

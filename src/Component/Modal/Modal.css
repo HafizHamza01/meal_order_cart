@@ -14,5 +14,14 @@
   background-color: white;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  height: 80%;
+}
+.close_btn{
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+  background-color: brown;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
 }

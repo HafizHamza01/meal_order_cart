@@ -21,6 +21,6 @@
 .img_section img {
   object-fit: cover;
   width: 108%;
-  height: 350px;
+  height: 65vh;
   transform: rotateZ(-4deg) translateY(-4rem) translateX(-1rem);
 }

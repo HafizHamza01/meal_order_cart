@@ -1,6 +1,5 @@
 import React from 'react'
 import "./AboutMeal.css";
-import { useState } from 'react';
 import SingleMeal from './SingleMeal';
 const DUMMY_MEALS = [
     {
@@ -28,24 +27,7 @@ const DUMMY_MEALS = [
         price: 18.99,
     },
 ];
-const AboutMeal = ({onAdd, fullArray}) => {
-    // const [modalCart, setModalCart] = useState([]);
-    // console.log(modalCart);
-    // const onAdd = (item) => {
-    //     const exist = modalCart.find((x) => {
-    //         return x.id === item.id
-    //     })
-    //     if (exist) {
-    //         setModalCart(modalCart.map((x) => x.id === item.id ? { ...x, quantity: x.quantity + 1 } : x)
-    //         )
-    //     }
-    //     else {
-    //         // setModalCart(prev => [...prev, { ...item, quantity: 1 }])
-    //         setModalCart([...modalCart , item]);
-        
-    //     }
-
-    // }
+const AboutMeal = ({ onAdd, fullArray }) => {
     return (
         <>
             <section className='about_meal_section'>
